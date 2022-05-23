@@ -15,7 +15,7 @@ document.querySelector(".btn-group").addEventListener("click", (e) => {
     city = e.target.getAttribute("id");
   else return;
 
-  axios(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`)
+  axios(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${API_KEY}`)
     // .then(response => response.json())
     .then(response => {
       lat = response.data[0].lat;
