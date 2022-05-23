@@ -28,7 +28,7 @@ document.querySelector(".btn-group").addEventListener("click", (e) => {
           weatherImg = response.data.weather[0].icon;
           temp.innerText = `온도 : ${Math.round(response.data.main.temp - 273.15)}`;
           icon.style.display = "block";
-          icon.src = `http://openweathermap.org/img/wn/${weatherImg}@2x.png`;
+          icon.src = `https://openweathermap.org/img/wn/${weatherImg}@2x.png`;
         });
     })
 });
